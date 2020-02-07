@@ -6,7 +6,7 @@ $fileLocation = Join-Path $toolsDir 'ManageEngine_AssetExplorer_64bit.exe'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'AssetExplorer*'
-#  file          = $fileLocation
+  file          = $fileLocation
   fileType      = 'exe'
   silentArgs    = "/s /v`"/qn`" /v`"REBOOT=ReallySuppress`" /sms"
   validExitCodes= @(0,1641,3010)
